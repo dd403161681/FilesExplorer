@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/childContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@id/list_catalog"
+        style="@style/video_handle_style"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10.0dip" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="96.0dip"
+        android:layout_below="@id/list_catalog">
+
+        <FrameLayout
+            android:id="@id/list_file_back"
+            android:layout_width="96.0dip"
+            android:layout_height="96.0dip">
+
+            <ImageView
+                android:id="@id/list_file_folder"
+                android:layout_width="96.0dip"
+                android:layout_height="96.0dip"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@id/list_file_image"
+                android:layout_width="96.0dip"
+                android:layout_height="96.0dip"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@id/list_file_video"
+                android:layout_width="72.0dip"
+                android:layout_height="52.0dip"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@id/file_video_icon"
+                android:layout_width="32.0dip"
+                android:layout_height="32.0dip"
+                android:layout_gravity="center"
+                android:background="@drawable/video_play_icon" />
+
+            <ImageView
+                android:id="@id/list_file_picture"
+                android:layout_width="72.0dip"
+                android:layout_height="54.0dip"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop" />
+
+            <com.xgimi.filemanager.view.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@id/list_file_apk"
+                android:layout_width="64.0dip"
+                android:layout_height="64.0dip"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                app:riv_corner_radius="8.0dip" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@id/list_file_name"
+            style="@style/title_style"
+            android:layout_width="400.0dip"
+            android:layout_height="100.0dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20.0dip"
+            android:layout_toRightOf="@id/list_file_back"
+            android:ellipsize="marquee"
+            android:enabled="false"
+            android:focusableInTouchMode="true"
+            android:gravity="center|left"
+            android:singleLine="true" />
+
+        <com.xgimi.filemanager.view.MyCheckbox
+            android:id="@id/select_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:clickable="false"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@id/list_file_modifytime"
+            style="@style/title_style"
+            android:layout_width="160.0dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40.0dip"
+            android:layout_toLeftOf="@id/select_checkbox"
+            android:enabled="false"
+            android:focusable="false"
+            android:gravity="right"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@id/list_file_size"
+            style="@style/title_style"
+            android:layout_width="100.0dip"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40.0dip"
+            android:layout_toLeftOf="@id/list_file_modifytime"
+            android:enabled="false"
+            android:focusable="false"
+            android:gravity="right"
+            android:singleLine="true" />
+
+        <View
+            style="@style/dividingline"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

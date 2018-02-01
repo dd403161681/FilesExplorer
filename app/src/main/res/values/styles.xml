@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="@style/Theme.Leanback"></style>
+	
+	<style name="transparent">
+        <item name="android:windowBackground">@drawable/file_search_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="home_title_style">
+        <item name="android:textSize">28.0px</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@drawable/font_color_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/home_title_selector</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="title_style">
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@drawable/font_color_selector</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="file_detail_style">
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/heise</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="video_handle_style">
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_height">72.0dip</item>
+    </style>
+
+    <style name="dialog_notitle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/dialog_background_color</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/dialog_trans</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="FullHeightDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="choose_time_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:background">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="setting_text_style">
+        <item name="android:textSize">28.0sp</item>
+        <item name="android:textColor">@drawable/font_color_selector</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">8.0dip</item>
+        <item name="android:radius">2.0dip</item>
+    </style>
+
+    <style name="setting_item_image_style">
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:layout_width">@dimen/setting_item_size</item>
+        <item name="android:layout_height">@dimen/setting_item_size</item>
+    </style>
+
+    <style name="dividingline">
+        <item name="android:background">@color/settings_space</item>
+    </style>
+</resources>

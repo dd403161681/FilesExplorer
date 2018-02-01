@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_device"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00ffffff">
+
+    <GridView
+        android:id="@+id/device_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:descendantFocusability="afterDescendants"
+        android:horizontalSpacing="6.0dip"
+        android:listSelector="#00ffffff"
+        android:numColumns="5"
+        android:overScrollMode="never"
+        android:padding="@dimen/contentpadding"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10.0dip" />
+
+    <ListView
+        android:id="@+id/device_list"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:divider="#00ffffff"
+        android:listSelector="#00ffffff"
+        android:paddingBottom="@dimen/contentpadding"
+        android:paddingLeft="78.0dip"
+        android:paddingRight="78.0dip"
+        android:paddingTop="@dimen/contentpadding"
+        android:scrollbars="none"
+        android:visibility="invisible"/>
+
+    <com.xgimi.filemanager.view.VideoFocusBorderView
+        android:id="@+id/resourceborderview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+</FrameLayout>

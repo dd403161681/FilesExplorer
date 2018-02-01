@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/grid_item_w"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:id="@+id/grid_item_framelayout"
+        android:layout_width="@dimen/grid_item_w"
+        android:layout_height="@dimen/grid_item_h"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/grid_item_icon"
+            android:layout_width="@dimen/grid_item_w"
+            android:layout_height="@dimen/grid_item_h"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/grid_item_name"
+        style="@style/title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_device_back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginTop="6.0dip"
+        android:ellipsize="marquee"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/grid_item_capacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grid_item_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6.0dip"
+        android:singleLine="true"
+        android:textColor="@drawable/font_color_selector"
+        android:textSize="18.0sp" />
+</RelativeLayout>

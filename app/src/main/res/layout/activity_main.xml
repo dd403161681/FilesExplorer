@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/blue">
+    <!--    <TextView
+        android:textSize="20.0sp"
+        android:textColor="@color/white"
+        android:layout_gravity="bottom|center|left"
+        android:id="@+id/samba_notice"
+        android:paddingLeft="50.0dip"
+        android:paddingBottom="@dimen/menu_notice_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+    <TextView
+        android:textSize="20.0sp"
+        android:textColor="@color/white"
+        android:layout_gravity="bottom|center|right"
+        android:paddingRight="@dimen/menu_notice_padding"
+        android:paddingBottom="@dimen/menu_notice_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu_notice" />
+    <RelativeLayout
+        android:id="@+id/menuContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" />
+
+    <View
+        android:id="@+id/hoverContainer"
+        android:layout_width="300.0dip"
+        android:layout_height="fill_parent"
+        android:background="#00000000" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/contentheight"
+        android:layout_marginLeft="50.0dip"
+        android:layout_marginRight="50.0dip"
+        android:layout_marginTop="@dimen/pager_margin_top"
+        android:focusable="false" />
+
+    <com.obe.filesexplorer.view.HomeTitleView
+        android:id="@+id/home_titel_view"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/titlehight"
+        android:layout_marginLeft="96.0dip"
+        android:layout_marginRight="96.0dip"
+        android:layout_marginTop="@dimen/titlemargintop"
+        android:descendantFocusability="afterDescendants" />
+</FrameLayout>

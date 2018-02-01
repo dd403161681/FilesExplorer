@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00000000">
+
+    <TextView
+        android:id="@+id/empty_content_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/emptycontentnotice"
+        android:textSize="20.0sp"
+        android:visibility="invisible" />
+
+    <com.xgimi.filemanager.view.VerticalSmoothGridView
+        android:id="@id/category_grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:horizontalSpacing="6.0dip"
+        android:listSelector="#00000000"
+        android:numColumns="5"
+        android:overScrollMode="never"
+        android:padding="@dimen/contentpadding"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/grid_vertical_Spacing" />
+
+    <ListView
+        android:id="@id/category_list"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:divider="#00ffffff"
+        android:listSelector="#00ffffff"
+        android:paddingBottom="@dimen/contentpadding"
+        android:paddingLeft="78.0dip"
+        android:paddingRight="78.0dip"
+        android:paddingTop="@dimen/contentpadding"
+        android:scrollbars="none" />
+
+    <com.xgimi.filemanager.view.VideoFocusBorderView
+        android:id="@id/resourceborderview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+</RelativeLayout>

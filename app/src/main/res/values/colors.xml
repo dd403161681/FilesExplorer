@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#ff007aff</color>
+    <color name="heise">#ff000000</color>
+    <color name="danheise">#6a000000</color>
+    <color name="qianheise">#2a000000</color>
+    <color name="light">#ffeeeeee</color>
+    <color name="white">#ffffffff</color>
+    <color name="danhuise">#8acccccc</color>
+    <color name="huise">#ffcccccc</color>
+    <color name="yipingmenu_back">#ffcccccc</color>
+    <color name="appback">#fff8f8f8</color>
+    <color name="titlespace">#eeb2b2b2</color>
+    <color name="viewpager_color_bg">#ffe1e2e3</color>
+    <color name="divider_color">#ffd5d5d5</color>
+    <color name="music_art_color">#ff999999</color>
+    <color name="music_title_color">#ff1a1a1b</color>
+    <color name="music_duration_color">#ff1a1a1b</color>
+    <color name="music_itemflag_color">#ff4ba5ea</color>
+    <color name="music_control_art_color">#eec4e0f6</color>
+    <color name="setting_bk">#fff5f5f6</color>
+    <color name="indictor_selected_color">#ffffffff</color>
+    <color name="indictor_unselected_color">#ff859a99</color>
+    <color name="dialog_background_color">#ff5e5e5e</color>
+    <color name="dialog_text_color">#ff5e5e5e</color>
+    <color name="layout_bk">#eef5f5f6</color>
+    <color name="dialog_trans">#00000000</color>
+    <color name="color_trans">#00000000</color>
+    <color name="settings_space">#1affffff</color>
+    <color name="tianlan">#ff33ccff</color>
+    <color name="black">#ff000000</color>
+    <color name="gray">#ffcccccc</color>
+</resources>

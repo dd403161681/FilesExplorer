@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:id="@+id/listitem_device_back"
+        android:layout_width="240.0dip"
+        android:layout_height="240.0dip"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/listitem_device_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/listitem_device_name"
+        style="@style/title_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listitem_device_back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6.0dip"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/listitem_device_capacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/listitem_device_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6.0dip"
+        android:singleLine="true"
+        android:textColor="@drawable/font_color_selector"
+        android:textSize="18.0sp" />
+</RelativeLayout>
