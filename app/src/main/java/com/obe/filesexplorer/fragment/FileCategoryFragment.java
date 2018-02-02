@@ -4,7 +4,7 @@ import android.widget.AdapterView;
 import android.widget.TextView;
 
 import com.obe.filesexplorer.FilesExplorerApplication;
-import com.obe.filesexplorer.datamodel.EmptyDataListener;
+import com.obe.filesexplorer.filehelper.EmptyDataListener;
 import com.obe.filesexplorer.viewadapter.FileDetailAdapter;
 
 /**

@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 
 import com.obe.filesexplorer.FilesExplorerApplication;
 import com.obe.filesexplorer.datamodel.BaseData;
-import com.obe.filesexplorer.datamodel.EmptyDataListener;
+import com.obe.filesexplorer.filehelper.EmptyDataListener;
 
 import java.util.HashMap;
 import java.util.List;

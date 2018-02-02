@@ -3,14 +3,12 @@ package com.obe.filesexplorer.datamodel;
 import java.util.ArrayList;
 import java.util.List;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Build;
 import android.os.StatFs;
 import android.os.storage.StorageManager;
 import android.os.storage.StorageVolume;
 import android.support.annotation.RequiresApi;
-
 
 /**
  * Created by ken on 2018/1/31.
@@ -31,6 +29,12 @@ public class LocalDevice {
 
     public DeviceInfo getDeviceInfo(String path){
         DeviceInfo devInfo = new DeviceInfo();
+        devInfo.mDevName = getUsbName(path);
+        devInfo.mRootPath = path;
+        devInfo.mQuotaAvailable = 0L;
+        devInfo.mQuotaTotal = 0L;
+        devInfo.mMaxFileSize = 0L;
+        devInfo.mDeviceFrom="";
 
         return devInfo;
     }
@@ -44,7 +48,13 @@ public class LocalDevice {
         ArrayList arrayList = new ArrayList();
         List<StorageVolume> volumes = storageManager.getStorageVolumes();
 
+        for(int i=0; i<volumes.size(); i++){
+            StorageVolume volume  = volumes.get(i);
+        }
         return null;
     }
 
+    public String getUsbName (String path){
+        return null;
+    }
 }

@@ -1,50 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@id/childContainer"
+    android:id="@+id/list_file_container"
     android:layout_width="wrap_content"
     android:layout_height="100.0dip"
     android:orientation="vertical">
 
     <FrameLayout
-        android:id="@id/list_file_back"
+        android:id="@+id/list_file_back"
         android:layout_width="96.0dip"
         android:layout_height="96.0dip"
         android:layout_centerVertical="true">
 
         <ImageView
-            android:id="@id/list_file_folder"
+            android:id="@+id/list_file_folder"
             android:layout_width="96.0dip"
             android:layout_height="96.0dip"
             android:layout_gravity="center" />
 
         <ImageView
-            android:id="@id/list_file_image"
+            android:id="@+id/list_file_image"
             android:layout_width="96.0dip"
             android:layout_height="96.0dip"
             android:layout_gravity="center" />
 
         <ImageView
-            android:id="@id/list_file_video"
+            android:id="@+id/list_file_video"
             android:layout_width="72.0dip"
             android:layout_height="52.0dip"
             android:layout_gravity="center" />
 
         <ImageView
-            android:id="@id/file_video_icon"
+            android:id="@+id/file_video_icon"
             android:layout_width="32.0dip"
             android:layout_height="32.0dip"
             android:layout_gravity="center"
             android:background="@drawable/video_play_icon" />
 
         <ImageView
-            android:id="@id/list_file_picture"
+            android:id="@+id/list_file_picture"
             android:layout_width="72.0dip"
             android:layout_height="54.0dip"
             android:layout_gravity="center"
             android:scaleType="centerCrop" />
 
-        <com.xgimi.filemanager.view.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@id/list_file_apk"
+        <com.obe.filesexplorer.view.RoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/list_file_apk"
             android:layout_width="64.0dip"
             android:layout_height="64.0dip"
             android:layout_gravity="center"
@@ -53,7 +54,7 @@
     </FrameLayout>
 
     <TextView
-        android:id="@id/list_file_name"
+        android:id="@+id/list_file_name"
         style="@style/title_style"
         android:layout_width="450.0dip"
         android:layout_height="100.0dip"
@@ -66,8 +67,8 @@
         android:gravity="center|left"
         android:singleLine="true" />
 
-    <com.xgimi.filemanager.view.MyCheckbox
-        android:id="@id/select_checkbox"
+    <com.obe.filesexplorer.view.ObeCheckbox
+        android:id="@+id/select_checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -77,7 +78,7 @@
         android:focusable="false" />
 
     <TextView
-        android:id="@id/list_file_modifytime"
+        android:id="@+id/list_file_modifytime"
         style="@style/title_style"
         android:layout_width="160.0dip"
         android:layout_height="wrap_content"
@@ -90,7 +91,7 @@
         android:singleLine="true" />
 
     <TextView
-        android:id="@id/list_file_size"
+        android:id="@+id/list_file_size"
         style="@style/title_style"
         android:layout_width="100.0dip"
         android:layout_height="wrap_content"

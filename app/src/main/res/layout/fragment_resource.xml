@@ -13,8 +13,8 @@
         android:textSize="20.0sp"
         android:visibility="invisible" />
 
-    <com.xgimi.filemanager.view.VerticalSmoothGridView
-        android:id="@id/category_grid"
+    <com.obe.filesexplorer.view.VerticalSmoothGridView
+        android:id="@+id/category_grid"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:horizontalSpacing="6.0dip"
@@ -27,7 +27,7 @@
         android:verticalSpacing="@dimen/grid_vertical_Spacing" />
 
     <ListView
-        android:id="@id/category_list"
+        android:id="@+id/category_list"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
         android:layout_gravity="center_horizontal"
@@ -37,10 +37,11 @@
         android:paddingLeft="78.0dip"
         android:paddingRight="78.0dip"
         android:paddingTop="@dimen/contentpadding"
-        android:scrollbars="none" />
+        android:scrollbars="none"
+        android:visibility="invisible"/>
 
     <com.xgimi.filemanager.view.VideoFocusBorderView
-        android:id="@id/resourceborderview"
+        android:id="@+id/resource_borderview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="invisible" />

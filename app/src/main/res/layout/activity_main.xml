@@ -2,8 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rootContainer"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@color/blue">
+    android:layout_height="fill_parent">
     <!--    <TextView
         android:textSize="20.0sp"
         android:textColor="@color/white"
@@ -25,7 +24,8 @@
     <RelativeLayout
         android:id="@+id/menuContainer"
         android:layout_width="wrap_content"
-        android:layout_height="fill_parent" />
+        android:layout_height="fill_parent"
+        android:visibility="invisible"/>
 
     <View
         android:id="@+id/hoverContainer"

@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@id/childContainer"
+    android:id="@+id/childContainer"
     android:layout_width="@dimen/grid_item_w"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <TextView
-        android:id="@id/grid_catalog"
+        android:id="@+id/grid_catalog"
         style="@style/video_handle_style"
         android:layout_width="wrap_content"
         android:layout_marginLeft="10.0dip" />
 
     <FrameLayout
-        android:id="@id/file_back"
+        android:id="@+id/file_back"
         android:layout_width="@dimen/grid_item_w"
         android:layout_height="@dimen/grid_item_h"
         android:layout_below="@id/grid_catalog">
 
         <ImageView
-            android:id="@id/file_grid_video"
+            android:id="@+id/file_grid_video"
             android:layout_width="188.0dip"
             android:layout_height="138.0dip"
             android:layout_gravity="center" />
 
         <ImageView
-            android:id="@id/file_video_icon"
+            android:id="@+id/file_video_icon"
             android:layout_width="64.0dip"
             android:layout_height="64.0dip"
             android:layout_gravity="center"
             android:background="@drawable/video_play_icon" />
     </FrameLayout>
 
-    <com.xgimi.filemanager.view.MyCheckbox
-        android:id="@id/select_checkbox"
+    <com.obe.filesexplorer.view.ObeCheckbox
+        android:id="@+id/select_checkbox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -43,7 +43,7 @@
         android:focusable="false" />
 
     <TextView
-        android:id="@id/file_grid_name"
+        android:id="@+id/file_grid_name"
         style="@style/title_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

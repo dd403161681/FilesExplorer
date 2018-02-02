@@ -1,4 +1,4 @@
-package com.obe.filesexplorer.datamodel;
+package com.obe.filesexplorer.filehelper;
 
 /**
  * Created by ken on 2018/1/30.
